@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="265.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codenexus.codenexusp4.vista.AFederadoFXController">
+    <children>
+        <Label layoutX="54.0" layoutY="77.0" text="Nif">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nif" layoutX="201.0" layoutY="79.0" />
+        <Label layoutX="54.0" layoutY="23.0" text="Nombre">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nombre" layoutX="201.0" layoutY="28.0" />
+        <Label layoutX="54.0" layoutY="142.0" text="Federación">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nombreFederacion" layoutX="201.0" layoutY="145.0" />
+        <Button fx:id="btnGuardar" layoutX="201.0" layoutY="191.0" mnemonicParsing="false" onAction="#agregarSocio" prefHeight="25.0" prefWidth="149.0" text="Guardar" />
+    </children>
+
+</AnchorPane>

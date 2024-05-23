@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="607.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codenexus.codenexusp4.vista.SocioFxController">
+    <children>
+        <VBox />
+          <Button fx:id="salir" layoutX="80.0" layoutY="484.0" onAction="#salir" prefHeight="74.0" prefWidth="201.0" text="Volver al Menú Principal" />
+          <Button fx:id="mostrarFactura" layoutX="80.0" layoutY="375.0" onAction="#mostrarFactura" prefHeight="60.0" prefWidth="201.0" text="Mostrar Factura" />
+          <Button fx:id="mostrarFiltroSocio" layoutX="80.0" layoutY="286.0" onAction="#mostrarFiltroSocio" prefHeight="60.0" prefWidth="201.0" text="Mostrar Socios" />
+          <Button fx:id="eliminarSocio" layoutX="80.0" layoutY="212.0" onAction="#eliminarSocio" prefHeight="50.0" prefWidth="201.0" text="Eliminar Socio" />
+          <Button fx:id="modificarSeguro" layoutX="80.0" layoutY="138.0" onAction="#modificarSeguro" prefHeight="50.0" prefWidth="201.0" text="Modificar Seguro" />
+          <Label layoutX="91.0" layoutY="14.0" text="Gestión de Socios">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font></Label>
+      <TabPane layoutX="308.0" layoutY="57.0" prefHeight="348.0" prefWidth="381.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="SOCIO">
+               <content>
+                  <TableView fx:id="tablaSocios" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="idSocioColumn" prefWidth="69.0" text="ID" />
+                      <TableColumn fx:id="nombreSocioColumn" prefWidth="177.0" text="Nombre" />
+                        <TableColumn fx:id="tipoSocioColumn" prefWidth="135.0" text="Tipo de Socio" />
+                    </columns>
+                  </TableView>
+               </content></Tab>
+          <Tab text="ESTANDAR">
+               <content>
+                  <TableView fx:id="tablaEstandar" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="idSEstandarColumn" prefWidth="88.0" text="ID" />
+                      <TableColumn fx:id="nifEstandarColumn" prefWidth="145.0" text="NIF" />
+                        <TableColumn fx:id="seguroContradadoColumn" prefWidth="148.0" text="SEGURO CONTRADADO" />
+                    </columns>
+                  </TableView>
+               </content></Tab>
+            <Tab text="FEDERADO">
+               <content>
+                  <TableView fx:id="tablaFederado" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="idSFederadoColumn" prefWidth="66.0" text="ID" />
+                      <TableColumn fx:id="nifFederadoColumn" prefWidth="185.0" text="NIF" />
+                        <TableColumn fx:id="idFederacionColumn" prefWidth="130.0" text="ID FEDERACION" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab text="INFANTIL">
+               <content>
+                  <TableView fx:id="tablaInfantil" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="idSInfantilColumn" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="idTutorColumn" prefWidth="136.0" text="ID DEL TUTOR" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+          <Button fx:id="agregarSocio" layoutX="80.0" layoutY="57.0" onAction="#agregarSocio" prefHeight="50.0" prefWidth="201.0" text="Agregar Socio" />
+    </children>
+</AnchorPane>

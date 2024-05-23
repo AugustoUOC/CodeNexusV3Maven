@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="260.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codenexus.codenexusp4.vista.MostrarSocioFXController">
+   <children>
+      <Button fx:id="btnAplicarFiltro" layoutX="327.0" layoutY="181.0" mnemonicParsing="false" onAction="#mostrarSociosPorTipo" prefHeight="65.0" prefWidth="192.0" text="Aplicar Filtro por tipo" />
+      <Button fx:id="btnMostrarSocios" layoutX="66.0" layoutY="130.0" mnemonicParsing="false" onAction="#mostrarSocios" prefHeight="65.0" prefWidth="182.0" text="Mostrar Todos" />
+      <Label layoutX="112.0" layoutY="28.0" text="Filtros para los Socios">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="aplicarFiltroDesplegable" layoutX="327.0" layoutY="130.0" prefHeight="32.0" prefWidth="192.0" />
+   </children>
+</AnchorPane>

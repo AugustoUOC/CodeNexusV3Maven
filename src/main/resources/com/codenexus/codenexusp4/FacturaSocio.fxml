@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="422.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codenexus.codenexusp4.vista.FacturaSocioFXController">
+
+    <children>
+        <Label layoutX="23.0" layoutY="154.0" text="Ingrese el ID del socio:" />
+        <TextField fx:id="idSocioField" layoutX="23.0" layoutY="179.0" />
+        <Button fx:id="mostrarFacturaBtn" layoutX="19.0" layoutY="230.0" mnemonicParsing="false" onAction="#mostrarFactura" prefHeight="25.0" prefWidth="149.0" text="Mostrar Factura" />
+        <TextArea fx:id="facturaTextArea" layoutX="189.0" layoutY="77.0" prefHeight="330.0" prefWidth="397.0" />
+      <Label layoutX="190.0" prefHeight="63.0" prefWidth="395.0" text="Impresion Factura">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

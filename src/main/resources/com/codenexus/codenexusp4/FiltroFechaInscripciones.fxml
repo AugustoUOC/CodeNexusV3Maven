@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="226.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codenexus.codenexusp4.vista.FiltroFechaInscripcionesFXController">
+
+    <children>
+        <Label layoutX="14.0" layoutY="74.0" prefHeight="26.0" prefWidth="112.0" text="Fecha de Inicio">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="137.0" prefHeight="26.0" prefWidth="112.0" text="Fecha Final">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fechaInicio" layoutX="126.0" layoutY="75.0" />
+        <TextField fx:id="fechaFin" layoutX="126.0" layoutY="138.0" />
+        <Button fx:id="aplicarFiltro" layoutX="173.0" layoutY="174.0" mnemonicParsing="false" onAction="#aplicarFiltroFechas" text="Filtrar">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="48.0" layoutY="14.0" text="Filtro por Fechas">
+            <font>
+                <Font name="System Bold Italic" size="27.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

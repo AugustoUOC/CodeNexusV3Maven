@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="166.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codenexus.codenexusp4.vista.AInfantilFXController">
+
+    <children>
+        <Label layoutX="23.0" layoutY="77.0" text="Id del Socio Tutor">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="idTutor" layoutX="201.0" layoutY="79.0" />
+        <Label layoutX="23.0" layoutY="26.0" text="Nombre">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nombre" layoutX="201.0" layoutY="28.0" />
+        <Button fx:id="btnGuardar" layoutX="201.0" layoutY="130.0" mnemonicParsing="false" onAction="#agregarSocio" prefHeight="25.0" prefWidth="149.0" text="Guardar" />
+    </children>
+
+</AnchorPane>

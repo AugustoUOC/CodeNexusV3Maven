@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="JPA_PU">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.codenexus.codenexusp4.modelo.Socio</class>
+        <class>com.codenexus.codenexusp4.modelo.Seguro</class>
+        <class>com.codenexus.codenexusp4.modelo.Inscripcion</class>
+        <class>com.codenexus.codenexusp4.modelo.Infantil</class>
+        <class>com.codenexus.codenexusp4.modelo.Federado</class>
+        <class>com.codenexus.codenexusp4.modelo.Federacion</class>
+        <class>com.codenexus.codenexusp4.modelo.Excursion</class>
+        <class>com.codenexus.codenexusp4.modelo.Estandar</class>
+        <properties> <!-- Propiedades de mi BBDD -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/poo_bbdd"/>
+            <property name="jakarta.persistence.jdbc.user" value="admin"/>
+            <property name="jakarta.persistence.jdbc.password" value="123456"/>
+
+            <!-- Configuraciones específicas de Hibernate -->
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="false"/>
+        </properties>
+    </persistence-unit>
+</persistence>

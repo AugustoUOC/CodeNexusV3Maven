@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codenexus.codenexusp4.vista.FiltroInscripcionesFXController">
+   <children>
+      <Label layoutX="84.0" layoutY="14.0" text="Filtros para las Inscripciones">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMostrarInscripciones" layoutX="64.0" layoutY="91.0" mnemonicParsing="false" onAction="#mostrarInscripciones" prefHeight="68.0" prefWidth="157.0" text="Mostrar Todas" />
+      <Button fx:id="btnFiltrarPorSocio" layoutX="332.0" layoutY="91.0" mnemonicParsing="false" onAction="#abrirFiltroPorSocio" prefHeight="68.0" prefWidth="157.0" text="Filtrar Por Socio" />
+      <Button fx:id="btnFiltrarPorFecha" layoutX="64.0" layoutY="186.0" mnemonicParsing="false" onAction="#abrirFiltroFecha" prefHeight="68.0" prefWidth="157.0" text="Filtrar por Fechas" />
+      <Button fx:id="btnFiltroPorSocioYFecha" layoutX="332.0" layoutY="186.0" mnemonicParsing="false" onAction="#abrirFiltroPorSocioYFecha" prefHeight="68.0" prefWidth="157.0" text="Filtar por Socios y Fechas" />
+      <Button fx:id="btnSalir" layoutX="191.0" layoutY="295.0" mnemonicParsing="false" onAction="#salir" prefHeight="68.0" prefWidth="157.0" text="Salir" />
+   </children>
+</AnchorPane>
